@@ -27,7 +27,7 @@ function getAtt() {
     let currentScene = localStorage.getItem('currentScene');
     if (currentScene) {
         // Update the scene display with the retrieved current scene
-        scene.innerHTML = currentScene;
+        writeScene(currentScene);
     }
 }
 
@@ -59,8 +59,22 @@ function clearButtons() {
     });
 };
 /**
- * Writes a new scene to the scene display and updates the attributes.
- * Increments the scene count by 1.
+ * Writes a new/**
+  * Clears all buttons within the scene paragraph by disabling them.
+  *
+  * @returns {void}
+  */
+ function clearButtons() {
+     // Select all button elements within the scene paragraph
+     const buttons = document.querySelectorAll('#scene button');
+ 
+     // Iterate over each button and disable it
+     buttons.forEach(button => {
+         button.disabled = true;
+     });
+ }; 
+ /* scene to the scene display and updates the attributes.
+  Increments the scene count by 1.
  *
  * @param {string} zach - The new scene content to be displayed.
  * @returns {void}
