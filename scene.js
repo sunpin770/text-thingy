@@ -22,4 +22,3 @@ function scene5() {
 function scene6() {
     writeScene(`Your master, the great assasin, lives in a little hovel, the outside betraying none of the immense riches hidden within.<br/>When you enter, it's empty.<br/>Suddenly, from the entranceway behind you, the hooded form of your master appears. He lunges toward you on impulse, not realizing it's you.<br/>You can now either dodge and make him realize it's you <button onclick="clearButtons(); appendScene(fight1.escape)">select</button>, or you can draw your own dagger and test your skills. <button onclick="clearButtons(); appendScene(fight(null, null, fight1.win, fight1.lose, 6))">select</button>`)
 }
-document.getElementById('attDisplay').innerHTML = "Scenes loaded!"

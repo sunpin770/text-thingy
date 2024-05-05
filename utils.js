@@ -29,6 +29,12 @@ function getAtt() {
         // Update the scene display with the retrieved current scene
         writeScene(currentScene);
     }
+    // Retrieve and set current scene numberfrom local storage
+    let currentSceneNum = localStorage.getItem('currentSceneNum');
+    if (currentSceneNum) {
+        // Update the scene display with the retrieved current scene number
+        sceneCount = currentSceneNum;
+    }
 }
 
 

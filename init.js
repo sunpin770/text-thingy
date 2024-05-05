@@ -9,6 +9,7 @@ document.getElementById('start').innerHTML = `
 function saveGame() {
     localStorage.setItem('attributes', JSON.stringify(char));
     localStorage.setItem('currentScene', scene.innerHTML); // Save current scene
+    localStorage.setItem('currentSceneNum', sceneCount);
     alert('Game saved successfully!');
 }
 
